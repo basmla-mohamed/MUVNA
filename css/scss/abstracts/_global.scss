@@ -1,0 +1,47 @@
+@use "./variables" as *;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #050b18 0%, #0a1930 50%, #050b18 100%);
+  border-left: 1px solid rgba(75, 190, 255, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #080f20;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #d7f7ff 0%, #70e1ff 18%, #168bff 48%, #3157e8 72%, #8bceff 100%);
+  box-shadow:
+    0 0 8px rgba(22, 139, 255, 0.6),
+    0 0 20px rgba(112, 225, 255, 0.25);
+}
+
+#main-page.white-theme {
+  &::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #fff8fc 0%, #fce8f1 50%, #fff8fc 100%);
+    border-left-color: rgba(202, 24, 113, 0.15);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-color: #fff8fc;
+    background: linear-gradient(180deg, #fce8f1 0%, #e4a1c2 18%, #ca1871 48%, #7a0c44 72%, #f3b8d5 100%);
+    box-shadow:
+      0 0 8px rgba(202, 24, 113, 0.35),
+      0 0 20px rgba(228, 161, 194, 0.2);
+  }
+}

@@ -1,0 +1,227 @@
+/*burger span*/
+@keyframes burgerAnimate {
+  0% {
+    transform: scaleX(0.45);
+    transform-origin: right;
+  }
+
+  50% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+
+  100% {
+    transform: scaleX(0.45);
+    transform-origin: right;
+  }
+}
+
+/*login part1*/
+@keyframes loginPart1Animate {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/*show forms*/
+@keyframes loginFormShow {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*moving films*/
+@keyframes filmMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*background image*/
+@keyframes backgroundAnimate {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0) scale(0.5) rotateY(-15deg);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-35px) scale(1) rotateY(0);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-55px) scale(1.05) rotateY(3deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-85px) scale(1.1) rotateY(0);
+  }
+}
+
+/*shine on top relative header*/
+@keyframes sineInTopRelative {
+  0%,
+  25% {
+    background-position: 150% 0;
+  }
+
+  75%,
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes starGlow {
+  from {
+    opacity: 0.5;
+    transform: scale(0.85) rotate(0deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.15) rotate(15deg);
+  }
+}
+
+@keyframes filmLight {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes logoGlow {
+  from {
+    text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);
+  }
+
+  to {
+    text-shadow: 0 0 22px rgba(212, 175, 55, 0.9);
+  }
+}
+
+@keyframes filmFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-4px) rotate(8deg);
+  }
+}
+@keyframes movieHighlight {
+  0% {
+    box-shadow:
+      0 0 12px #d4af3740,
+      0 0 20px #d4af3715;
+  }
+
+  50% {
+    box-shadow:
+      0 0 25px #d4af37b0,
+      0 0 45px #d4af3750;
+  }
+  100% {
+    border: none;
+
+    box-shadow:
+      0 0 12px #d4af3740,
+      0 0 20px #d4af3715;
+  }
+}
+@keyframes movieImageHighlight {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.2);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.1);
+  }
+}
+@keyframes clock {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px #55b9ff50);
+  }
+
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #55b9ff);
+  }
+}
+
+@keyframes openLeft {
+  to {
+    transform: translateX(-101%);
+  }
+}
+
+@keyframes openRight {
+  to {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes moveLine {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(300%);
+  }
+}
+
+@keyframes floatIcon {
+  50% {
+    transform: translateY(-5px);
+  }
+}

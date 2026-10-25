@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Meta-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Basmala Mohamed" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Muvana</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/plugins/headAnimations.css" />
+    <link rel="stylesheet" href="css/animationPlugins.css" />
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.responsive.css" />
+    <link id="favicon" rel="icon" href="./images/LOGO.png" />
+
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="js/plugins/headAnimations.js" defer></script>
+    <script src="./js/plugins/owl.carousel.min.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js " defer></script>
+    <script src="js/wow.js" defer></script>
+    <script src="js/sweetAlert" defer></script>
+    <script src="js/functions.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="js/notes.js" defer></script>
+  </head>
+
+  <body id="login-page">
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-5 part part1 p-5">
+          <div class="item">
+            <div class="head d-flex flex-row align-items-center column-gap-4">
+              <div class="icon">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h1>MUVANA</h1>
+            </div>
+            <div class="structure d-flex flex-column row-gap-2">
+              <h3>YOUR CINEMA,</h3>
+              <p class="hint">YOUR STORIES.</p>
+              <p class="text">Pick up where movie night left off.</p>
+              <p class="note">Sava favorites, Build your watchList, Find your next film</p>
+              <a href="./index.html" class="backHome">Back To Home</a>
+            </div>
+            <div class="footer">
+              <p>A film worth remembering is only search way.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 part part2 px-5 py-4">
+          <div class="item">
+            <div class="box signin">
+              <h2>Welcome back</h2>
+              <p class="welcome">Sign in to continue your movie journey.</p>
+              <div class="selection d-flex flex-row column-gap-3">
+                <div class="mb-0 pb-0 login active">
+                  <p>Login</p>
+                </div>
+                <div class="mb-0 pb-0 register">
+                  <p>Register</p>
+                </div>
+              </div>
+              <div class="form">
+                <div class="email">
+                  <p>Email address :</p>
+                  <div class="input"><i class="fa-solid fa-envelope"></i> <input type="email" placeholder="you@example.com" /></div>
+                </div>
+                <div class="password">
+                  <p>Password :</p>
+                  <i class="fa-solid fa-lock"></i>
+                  <input type="password" placeholder="your password..." />
+                  <i class="fa-regular fa-eye-slash"></i>
+                </div>
+                <div class="options d-flex flex-row justify-content-between">
+                  <div class="rememberMe">
+                    <input type="checkbox" id="rememberMe" name="rememberMe" />
+                    <label for="rememberMe" class="checkLabel">
+                      <i class="fa-solid fa-check"></i>
+                    </label>
+                    <span>Remember me</span>
+                  </div>
+
+                  <div class="forgetPassword">
+                    <span>Forgot password?</span>
+                  </div>
+                </div>
+                <button>Sign in</button>
+                <p class="or">OR</p>
+                <div class="footer">
+                  <p>New to the movies? <span>Create an account</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box register">
+              <div class="head d-flex flex-row column-gap-3 align-items-center">
+                <i class="fa-solid fa-clapperboard"></i>
+                <h2>Create an account</h2>
+              </div>
+              <p class="welcome">Join Muvana and start your movie journey.</p>
+              <div class="selection d-flex flex-row column-gap-3">
+                <div class="mb-0 pb-0 login">
+                  <p>Login</p>
+                </div>
+                <div class="mb-0 pb-0 register active">
+                  <p>Register</p>
+                </div>
+              </div>
+              <div class="form">
+                <div class="email">
+                  <p>Email address :</p>
+                  <div class="input"><i class="fa-solid fa-user"></i> <input type="name" placeholder="your name..." /></div>
+                </div>
+                <div class="email">
+                  <p>Email address :</p>
+                  <div class="input"><i class="fa-solid fa-envelope"></i> <input type="email" placeholder="you@example.com" /></div>
+                </div>
+                <div class="password">
+                  <p>Password :</p>
+                  <i class="fa-solid fa-lock"></i>
+                  <input type="email" placeholder="At least 8 characters" />
+                  <i class="fa-regular fa-eye-slash"></i>
+                </div>
+                <button>Create Account</button>
+                <p class="or">OR</p>
+                <div class="footer">
+                  <p>Already have an account?<span> Log in</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--fill fields array -->
+    <div class="fillAllFieldsAlert">
+      <div class="box">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>Please fill in all fields.</p>
+      </div>
+    </div>
+
+    <!--account created succesfuly-->
+    <div class="successAlert">
+      <div class="box">
+        <i class="fa-solid fa-circle-check"></i>
+        <p>Account created successfully. You can log in now.</p>
+      </div>
+    </div>
+
+    <!--email or pass envalid-->
+    <div class="loginErrorAlert">
+      <div class="box">
+        <i class="fa-solid fa-circle-xmark"></i>
+        <p>Email or password is incorrect.</p>
+      </div>
+    </div>
+  </body>
+</html>
