@@ -278,3 +278,11 @@ $("#themeButton").on("click", function () {
 
   localStorage.setItem("muvanaTheme", isLight ? "light" : "dark");
 });
+$("#languageBtn").on("click", function (e) {
+  e.stopPropagation();
+  $("#languageMenu").toggleClass("show");
+});
+
+$(document).on("click", function () {
+  $("#languageMenu").removeClass("show");
+});

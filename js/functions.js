@@ -113,7 +113,7 @@ function showTopRatdData(data) {
     dataRow.append(`
       <div class="col-lg-3" data-film-id="${film.id}">
         <div class="item">
-          <img src="./../images/top-rated/${film.film}" class="d-block w-100" />
+          <img src="./images/top-rated/${film.film}" class="d-block w-100" />
           <div class="react d-flex flex-column row-gap-3">
             <div class="latter"><i class="fa-solid fa-bookmark"></i></div>
             <div class="heart"><i class="fa-regular fa-heart"></i></div>
@@ -739,3 +739,15 @@ function showWatchLater() {
     `);
   });
 }
+
+function toggleUpArrow() {
+  if (window.scrollY > 200 && $(".popup.active").length === 0) {
+    $("#backToTop").addClass("scrolled");
+  } else {
+    $("#backToTop").removeClass("scrolled");
+  }
+}
+$(window).on("scroll", toggleUpArrow);
+$(document).on("click", function () {
+  toggleUpArrow();
+});
