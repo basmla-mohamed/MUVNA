@@ -137,8 +137,8 @@ $(document).on("click", "#top .item img, #top .details", function () {
   });
 
   //instead paste html popup code
-  popup.find(".popup-background").attr("src", `./../images/top-rated/backgrounds/${film.filmBackground}`);
-  popup.find(".popup-filmImage").attr("src", `./../images/top-rated/${film.film}`);
+  popup.find(".popup-background").attr("src", `./images/top-rated/backgrounds/${film.filmBackground}`);
+  popup.find(".popup-filmImage").attr("src", `./images/top-rated/${film.film}`);
   popup.find(".popup-title").text(film.title);
   popup.find(".popup-rate").text(film.rate);
   popup.find(".popup-stat-rate").text(film.rate + "/10");
@@ -188,7 +188,7 @@ function showTrendingData(Data) {
     // Create film carousel
     dataRow.append(`
       <div class="carousel-item ${index === 0 ? "active" : ""}" data-film-id="${film.id}">
-        <img src="./../images/trending/${film.film}" class="d-block w-100" />
+        <img src="./images/trending/${film.film}" class="d-block w-100" />
 
         <div class="details">VIEW DETAILS</div>
 
@@ -241,8 +241,8 @@ $(document).on("click", "#trending .details", function () {
     id = $(this).closest(".carousel-item").attr("data-film-id"),
     film = trendingData.find((film) => film.id == id);
 
-  popup.find(".popup-background").attr("src", `./../images/trending/backrounds/${film.filmBackground}`);
-  popup.find(".popup-filmImage").attr("src", `./../images/trending/${film.film}`);
+  popup.find(".popup-background").attr("src", `./images/trending/backrounds/${film.filmBackground}`);
+  popup.find(".popup-filmImage").attr("src", `./images/trending/${film.film}`);
   popup.find(".popup-title").text(film.title);
   popup.find(".popup-rate").text(film.rate);
   popup.find(".popup-stat-rate").text(film.rate + "/10");
@@ -313,7 +313,7 @@ function showPopularData(dataa) {
     dataRow.append(`
       <div class="col-lg-4" data-film-id="${film.id}">
         <div class="item">
-          <img src="./../images/popular/${film.film}" >
+          <img src="./images/popular/${film.film}" >
 
           <div class="icons">
             <i class="fa-solid fa-circle-info details"></i>
@@ -336,8 +336,8 @@ $(document).on("click", "#popular .details", function () {
   let film = popularData.find((film) => film.id == id);
   let genres = "";
 
-  popup.find(".popup-filmImage").attr("src", `./../images/popular/${film.film}`);
-  popup.find(".popup-background").attr("src", `./../images/popular/backgrounds/${film.filmBackground}`);
+  popup.find(".popup-filmImage").attr("src", `./images/popular/${film.film}`);
+  popup.find(".popup-background").attr("src", `./images/popular/backgrounds/${film.filmBackground}`);
   popup.find(".popup-title").text(film.title);
   popup.find(".popup-rate").text(film.rate);
   popup.find(".popup-stat-rate").text(film.rate + "/10");
@@ -383,7 +383,7 @@ function showMovies(data) {
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 b">
         <div class="item">
           <div class="movie-cart" data-film-id="${film.id}">
-            <img src="./../images/all-movies/${film.film}" alt="${film.title}" class="img-fluid">
+            <img src="./images/all-movies/${film.film}" alt="${film.title}" class="img-fluid">
             <span class="movie-rating"><i class="fa-solid fa-star"></i> ${film.rate}</span>
             <button class="favorite-btn"><i class="fa-regular fa-heart"></i></button>
             <div class="movie-layer">
@@ -455,9 +455,9 @@ $(document).on("click", "#movies .details-btn", function () {
   let film = moviesData.find((film) => film.id == id);
   let genresHTML = "";
 
-  popup.find(".popup-filmImage").attr("src", `./../images/all-movies/${film.film}`);
-  popup.find(".popup-background").attr("src", `./../images/backgrounds/${film.filmBackground}`);
-  //film.filmBackground        JSON: ./../images/backgrounds/Abominable.jfif  (that is was the error )
+  popup.find(".popup-filmImage").attr("src", `./images/all-movies/${film.film}`);
+  popup.find(".popup-background").attr("src", `./images/backgrounds/${film.filmBackground}`);
+  //film.filmBackground        JSON: ./images/backgrounds/Abominable.jfif  (that is was the error )
   // .split("/")               array: [".", "..", "images", "backgrounds", "Abominable.jfif"]
   // .pop()                    give us the last ele in array  (Abominable.jfif)
   //we put it finally          in src
@@ -554,7 +554,7 @@ function showFavorites() {
     content.append(`
       <div class="col-lg-3 col-md-4 col-6">
         <div class="item">
-          <img src="${film.film.includes("/") ? film.film : "./../images/all-movies/" + film.film}" class="img-fluid">
+          <img src="${film.film.includes("/") ? film.film : "./images/all-movies/" + film.film}" class="img-fluid">
           <footer>
             <h3>${film.title.length > 15 ? film.title.slice(0, 15) + "..." : film.title}</h3>
             <p>${film.date}</p>
@@ -589,7 +589,7 @@ function showWatchLater() {
     content.append(`
       <div class="col-lg-3 col-md-4 col-6">
         <div class="item">
-          <img src="${film.film.includes("/") ? film.film : "./../images/all-movies/" + film.film}" class="img-fluid" alt="${film.title}">
+          <img src="${film.film.includes("/") ? film.film : "./images/all-movies/" + film.film}" class="img-fluid" alt="${film.title}">
           <footer>
             <h3>${film.title}</h3>
             <p class="date">${film.date || ""}</p>
@@ -729,7 +729,7 @@ function showWatchLater() {
     content.append(`
       <div class="col-lg-3 col-md-4 col-6">
         <div class="item">
-          <img src="${film.film.includes("/") ? film.film : "./../images/all-movies/" + film.film}" class="img-fluid" alt="${film.title}">
+          <img src="${film.film.includes("/") ? film.film : "./images/all-movies/" + film.film}" class="img-fluid" alt="${film.title}">
           <footer>
             <h3>${film.title.length > 15 ? film.title.slice(0, 15) + "..." : film.title}</h3>
             <p class="date">${film.date || ""}</p>
