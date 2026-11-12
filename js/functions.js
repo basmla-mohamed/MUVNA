@@ -361,7 +361,7 @@ $(document).on("click", "#popular .details", function () {
 
 // Get movies data
 async function getMoviesData() {
-  let response = await fetch("https://basmla-mohamed.github.io/movs.api/moves.json");
+  let response = await fetch("https://basmla-mohamed.github.io/moves-api/moves.json");
 
   moviesData = await response.json();
 
