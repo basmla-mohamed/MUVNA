@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390">
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#0B1028"/><stop offset=".55" stop-color="#20153D"/><stop offset="1" stop-color="#44256B"/></linearGradient><radialGradient id="g"><stop stop-color="#9B6BFF" stop-opacity=".45"/><stop offset="1" stop-color="#9B6BFF" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="390" rx="28" fill="url(#b)"/><circle cx="1060" cy="80" r="260" fill="url(#g)"><animate attributeName="r" values="230;280;230" dur="7s" repeatCount="indefinite"/></circle>
+<g opacity=".18" stroke="#C6A8FF" fill="none"><path d="M760 0V390M830 0V390M900 0V390M970 0V390M1040 0V390M1110 0V390"/><path d="M700 70H1200M700 140H1200M700 210H1200M700 280H1200"/></g>
+<text x="75" y="85" font-family="Arial" font-size="18" letter-spacing="5" fill="#C6A8FF">01 / THE PROJECT</text>
+<text x="75" y="160" font-family="Arial" font-size="53" font-weight="800" fill="#FFFFFF">MORE THAN A</text><text x="75" y="220" font-family="Arial" font-size="53" font-weight="800" fill="#FFFFFF">MOVIE WEBSITE.</text>
+<text x="78" y="278" font-family="Arial" font-size="21" fill="#D4CBEF">A modern space to discover movies, explore stories,</text><text x="78" y="311" font-family="Arial" font-size="21" fill="#D4CBEF">and enjoy a cinematic browsing experience.</text>
+<rect x="78" y="340" width="260" height="3" rx="2" fill="#B79AFF"><animate attributeName="width" values="120;260;120" dur="4s" repeatCount="indefinite"/></rect>
+<circle cx="1010" cy="180" r="94" fill="#17102F" stroke="#9B6BFF" stroke-width="2"/><circle cx="1010" cy="180" r="75" fill="none" stroke="#00D9FF" stroke-opacity=".7" stroke-dasharray="8 12"><animateTransform attributeName="transform" type="rotate" from="0 1010 180" to="360 1010 180" dur="22s" repeatCount="indefinite"/></circle>
+<path d="M990 130 L990 230 L1070 180 Z" fill="#00D9FF" opacity=".9"/>
+</svg>
