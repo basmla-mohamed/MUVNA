@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#281B13"/><stop offset=".5" stop-color="#56351E"/><stop offset="1" stop-color="#9A6936"/></linearGradient><radialGradient id="gold"><stop stop-color="#FFD58A" stop-opacity=".45"/><stop offset="1" stop-color="#FFD58A" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="430" rx="28" fill="url(#b)"/><circle cx="1050" cy="100" r="260" fill="url(#gold)"><animate attributeName="r" values="220;280;220" dur="8s" repeatCount="indefinite"/></circle>
+<g fill="#FFE1A0" opacity=".65"><circle cx="100" cy="100" r="2"/><circle cx="250" cy="330" r="3"/><circle cx="970" cy="320" r="2"/><circle cx="1100" cy="220" r="3"/><circle cx="800" cy="80" r="2"/></g>
+<text x="600" y="78" text-anchor="middle" font-family="Arial" font-size="18" letter-spacing="6" fill="#FFE1A0">05 / THE CREATOR</text>
+<circle cx="600" cy="180" r="72" fill="#3B281B" stroke="#F2C47B" stroke-width="2"/><circle cx="600" cy="180" r="59" fill="none" stroke="#FFE1A0" stroke-dasharray="5 9"><animateTransform attributeName="transform" type="rotate" from="0 600 180" to="360 600 180" dur="24s" repeatCount="indefinite"/></circle>
+<text x="600" y="194" text-anchor="middle" font-family="Arial" font-size="43" font-weight="bold" fill="#FFE1A0">BM</text>
+<text x="600" y="300" text-anchor="middle" font-family="Arial" font-size="44" font-weight="800" letter-spacing="3" fill="#FFFFFF">BASMALA MOHAMED</text>
+<text x="600" y="343" text-anchor="middle" font-family="Arial" font-size="20" letter-spacing="3" fill="#FFE1A0">FRONT-END DEVELOPER</text>
+<text x="600" y="385" text-anchor="middle" font-family="Arial" font-size="16" fill="#F5DFC0">Building meaningful digital experiences with creativity and code.</text>
+</svg>
